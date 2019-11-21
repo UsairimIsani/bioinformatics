@@ -11,4 +11,4 @@ def PatternCount(text, pattern):
 
 
 if __name__ == "__main__":
-    print(PatternCount("ATCGTGTG", "GTG"))
+    pass

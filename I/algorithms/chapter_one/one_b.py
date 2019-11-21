@@ -1,41 +1,4 @@
-# Attempt One
-# def frequent_count(text, pattern):
-#     count = 0
-#     len_f_text = len(text)
-#     len_f_pattern = len(pattern)
-#     ran = len_f_text-len_f_pattern
-#     for p in range(0, ran+1):
-#         st_sl = text[p:p+len_f_pattern]
-#         if(st_sl == pattern):
-#             count = count+1
-#     return count
-
-
-# Attempt Two
-# import operator
-# def FrequentWords(text, k):
-#     len_f_text = len(text)
-#     ran = len_f_text-k
-#     freq_cou = dict()
-#     for p in range(0, ran+1):
-#         st_sl = text[p:p+k]
-#         freq = freq_cou.get(st_sl)+1 if freq_cou.get(st_sl) else 1
-#         freq_cou[st_sl] = freq
-#     ma = max(freq_cou.items(), key=operator.itemgetter(1))
-#     return ma
-
-
-# Attempt Three
-def PatternCount(text, pattern):
-    count = 0
-    len_f_text = len(text)
-    len_f_pattern = len(pattern)
-    ran = len_f_text-len_f_pattern
-    for p in range(0, ran+1):
-        st_sl = text[p:p+len_f_pattern]
-        if(st_sl == pattern):
-            count = count+1
-    return count
+from one_a import PatternCount
 
 
 def FrequentWords(text, k):
@@ -54,4 +17,4 @@ def FrequentWords(text, k):
 
 
 if __name__ == "__main__":
-    print(FrequentWords("ATCGTGTG", 2))
+    pass
