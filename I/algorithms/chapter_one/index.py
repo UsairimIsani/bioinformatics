@@ -15,4 +15,5 @@ def get_dataset(dataset):
 if __name__ == "__main__":
     got_data = get_dataset("d_one_2")
     print(PatternCount(got_data[0], got_data[1]))
-    print(FrequentWords(got_data[0], 9))
+    got_data = get_dataset("d_two_2")
+    print(FrequentWords(got_data[0], got_data[1]))

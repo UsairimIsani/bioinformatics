@@ -2,6 +2,7 @@ from one_a import PatternCount
 
 
 def FrequentWords(text, k):
+    k = int(k)
     kmers = set()
     for i in range(0, len(text)-k+1):
         kmers.add(text[i:i+k])
